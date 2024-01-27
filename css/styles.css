@@ -8,7 +8,7 @@ ul {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 0;
+  padding-left: 0;
 }
 
 a {
@@ -26,10 +26,28 @@ p {
   margin-bottom: 0;
 }
 
+.button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1158px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header-container {
+}
+
 /*logo and contacts*/
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .navigation {
+  display: flex;
 }
 
 .link-logo-nav {
@@ -40,6 +58,7 @@ p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logo-studio {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -51,6 +70,8 @@ p {
   text-transform: uppercase;
 }
 .nav-list {
+  display: flex;
+  gap: 40px;
 }
 .nav-item {
 }
@@ -68,12 +89,12 @@ p {
   color: #2e2f42;
 }
 
-.nav-item :hover,
-.nav-item :focus {
-  color: #404bbf;
+.address-container {
 }
+
 .adres {
   font-style: normal;
+  display: flex;
 }
 
 .adres-list {
@@ -82,6 +103,8 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
+  margin-left: auto;
+  display: flex;
 }
 
 .adres-item {
@@ -99,24 +122,39 @@ p {
 /*hero-images*/
 
 .hero-images {
-  background: #2e2f42;
+  background-color: #2e2f42;
+  padding: 188px 0;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
   color: var(--WHITE, #fff);
-  font-size: 56px;
-  line-height: 1.07;
   text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin-bottom: 48px;
 }
 
 .hero-button {
+  background: #4d5ae5;
+  color: #ffffff;
+  /*text button*/
+  text-align: center;
+  font-style: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  border-radius: 4px;
+  padding: 16px 32px;
   cursor: pointer;
-  background: #4d5ae5;
 }
 
 .hero-button:hover,
@@ -127,11 +165,29 @@ p {
 /*Feature*/
 
 .section-feature {
+  padding: 120px 0;
 }
 
 .section-feature-list {
+  display: flex;
+  gap: 24px;
 }
 .section-feature-item {
+  width: calc(100% / 72px) / 4;
+  width: 264px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .feature-title {
@@ -140,6 +196,7 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .paragraf-feauture {
@@ -151,6 +208,8 @@ p {
 
 /*our team*/
 
+.team-container {
+}
 .section-team {
   background-color: #f4f4fd;
 }
@@ -162,13 +221,26 @@ p {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
+  padding-top: 120px;
 }
 
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
   background-color: #ffffff;
+  margin-bottom: 120px;
+  width: 264px;
+  border: 0px 0px 4px 4px;
+  display: inline-flex;
+  padding-bottom: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
 }
 
 .photo-team {
@@ -181,6 +253,8 @@ p {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-top: 30px;
+  margin-bottom: 8px;
 }
 
 .profesion {
@@ -189,6 +263,14 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
+}
+
+/*portfolio*/
+
+.stor {
+  padding: 0 16px;
+  gap: 8px;
 }
 
 .section-portfolio {
@@ -201,11 +283,17 @@ p {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-top: 120px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .portfolio-item {
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
 }
 .content {
 }
@@ -216,6 +304,7 @@ p {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 32px;
 }
 
 .instrument {
@@ -223,12 +312,16 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 32px;
 }
 
 /*footer*/
 
 .footer {
   background: #2e2f42;
+  padding-top: 101.5px;
+  padding-bottom: 100px;
+  margin-top: 120px;
 }
 
 .link-logo-footer {
@@ -258,4 +351,6 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
+  padding-top: 8px;
 }
