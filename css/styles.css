@@ -40,16 +40,15 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  display: flex;
 }
 
 .header-container {
+  display: flex;
+  align-items: center;
 }
 
 /*logo and contacts*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 .navigation {
@@ -83,7 +82,6 @@ img {
   align-items: center;
 }
 .nav-item {
-  padding: 24px 0;
 }
 
 .nav-item :hover,
@@ -98,6 +96,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+  display: block;
 }
 
 .address-container {
@@ -105,7 +104,7 @@ img {
 
 .adres {
   font-style: normal;
-  display: flex;
+  margin-left: auto;
 }
 
 .adres-list {
@@ -139,9 +138,6 @@ img {
 }
 
 .hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .hero-title {
@@ -152,6 +148,7 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   max-width: 496px;
+  margin: 0 auto;
   margin-bottom: 48px;
 }
 
@@ -170,6 +167,8 @@ img {
   min-width: 169px;
   border: none;
   height: 56px;
+  margin: 0 auto;
+  display: block;
 }
 
 .hero-button:hover,
@@ -252,15 +251,8 @@ img {
 
 .team-item {
   background-color: #ffffff;
-  margin-bottom: 120px;
   width: 264px;
   border: 0px 0px 4px 4px;
-  display: inline-flex;
-  padding-bottom: 32px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
@@ -275,7 +267,6 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-top: 30px;
   margin-bottom: 8px;
 }
 
@@ -285,7 +276,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
 }
 
 /*portfolio*/
@@ -294,19 +284,21 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 
 .section-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.portfolio {
+.portfolio-title {
   color: #2e2f42;
   text-align: center;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -327,7 +319,6 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -336,7 +327,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
 }
 
 /*footer*/
