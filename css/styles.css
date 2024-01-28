@@ -40,6 +40,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  display: flex;
 }
 
 .header-container {
@@ -96,6 +97,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .address-container {
@@ -282,11 +284,14 @@ img {
 /*portfolio*/
 
 .stor {
-  padding: 0 16px;
-  gap: 8px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 .section-portfolio {
+  padding: 120px 0;
 }
 
 .portfolio {
@@ -296,17 +301,16 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  margin-top: 120px;
   margin-bottom: 72px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-item {
-  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  width: calc((100% - 48px) / 3);
 }
 .content {
 }
